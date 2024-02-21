@@ -1,0 +1,433 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+
+/* HEADER */
+
+.header {
+    padding: 1rem 0;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.header__title {
+    flex: 1;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.header__menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #000;
+}
+
+.header__btn-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.header__bars {
+    display: none;
+}
+
+@media (max-width: 891px) {
+    .header__title {
+        font-size: 1.2rem;
+    }
+    .header__link {
+        font-size: 0.8rem;
+    }
+    .header__btn {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 713px) {
+    .header {
+        justify-content: space-between;
+    }
+    .header__title {
+        flex: 0 1 auto;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__btn-container {
+        display: none;
+    }
+    .header__bars {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.hero__title {
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    max-width: 20ch;
+    margin-inline: auto;
+}
+
+.hero__description {
+    font-size: 1.2rem;
+    max-width: 60ch;
+    margin: 2rem auto;
+}
+
+@media (max-width: 891px) {
+    .hero__title {
+        font-size: 3rem;
+    }
+    .hero__description {
+        font-size: 1rem;
+        margin: 1.5rem auto;
+    }
+}
+
+@media (max-width: 713px) {
+    .hero {
+        margin-top: 5rem;
+    }
+    .hero__title {
+        font-size: 2.5rem;
+    }
+    .hero__description {
+        font-size: 0.9rem;
+        margin: 1rem auto;
+    }
+    .hero__btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 495px) {
+    .hero__title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 396px) {
+    .hero__title {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* PRICING */
+
+.pricing {
+    margin-top: 10rem;
+}
+
+.pricing__title {
+    font-size: 2.25rem;
+    letter-spacing: -0.05em;
+    line-height: 1;
+}
+
+.pricing__description {
+    font-size: 1.2rem;
+    max-width: 45ch;
+    margin: 1rem 0;
+}
+
+.pricing__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.pricing__box {
+    flex: 1;
+    min-width: 400px;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.pricing__price {
+    font-size: 2rem;
+}
+
+.pricing__plan {
+    margin: 1rem 0 0.25rem;
+}
+
+.pricing__plan-description {
+    color: #ccc;
+}
+
+.pricing__btn {
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 1000000000px;
+    margin: 2rem 0;
+    font-weight: 700;
+}
+
+.pricing__features {
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+@media (max-width: 891px) {
+    .pricing__title {
+        font-size: 2rem;
+    }
+    .pricing__description {
+        font-size: 1rem;
+    }
+    .pricing__price {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 713px) {
+    .pricing {
+        margin-top: 5rem;
+    }
+    .pricing__title {
+        font-size: 1.5rem;
+    }
+    .pricing__description {
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+    }
+    .pricing__plan-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 495px) {
+    .pricing__title {
+        font-size: 1.3rem;
+    }
+    .pricing__box {
+        min-width: 290px;
+    }
+}
+
+@media (max-width: 396px) {
+    .pricing__title {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* FEATURES */
+
+.features {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.features__title {
+    font-size: 2.25rem;
+    letter-spacing: -0.05em;
+    line-height: 1;
+}
+
+.features__description {
+    font-size: 1.2rem;
+    max-width: 45ch;
+    margin: 1rem auto;
+}
+
+.features__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.features__box {
+    width: 500px;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.features__box-title {
+    line-height: 1;
+}
+
+.features__box-description {
+    margin-top: 1rem;
+}
+
+@media (max-width: 891px) {
+    .features__title {
+        font-size: 2rem;
+    }
+    .features__description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 713px) {
+    .features {
+        margin-top: 5rem;
+    }
+    .features__title {
+        font-size: 1.5rem;
+    }
+    .features__description {
+        font-size: 0.9rem;
+        margin: 0.5rem auto;
+    }
+    .features__box-title {
+        font-size: 1rem;
+    }
+    .features__box-description {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 495px) {
+    .features__title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 396px) {
+    .pricing__title {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* CONTACT */
+
+.contact {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.contact__title {
+    font-size: 2.25rem;
+    letter-spacing: -0.05em;
+    line-height: 1;
+}
+
+.contact__description {
+    font-size: 1.2rem;
+    max-width: 60ch;
+    margin: 1rem auto;
+}
+
+@media (max-width: 891px) {
+    .contact__title {
+        font-size: 2rem;
+    }
+    .contact__description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 713px) {
+    .contact {
+        margin-top: 5rem;
+    }
+    .contact__title {
+        font-size: 1.5rem;
+    }
+    .contact__description {
+        font-size: 0.9rem;
+        margin: 0.5rem auto;
+    }
+    .contact__btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 495px) {
+    .contact__title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 396px) {
+    .contact__title {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* FOOTER */
+
+.footer {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.footer__title {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+
+/* UTILITY CLASSES */
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
