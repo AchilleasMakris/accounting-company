@@ -1,13 +1,14 @@
-Accounting Company Project
+**`Accounting Company Project`**
 
-Introduction
+
+## Introduction
 
 In this project, you will create a fictional Accounting Service website. 
-REQUIREMENT
 
+## REQUIREMENT:
+Use flexbox to align the website containers.
 
-
-Technologies
+## Technologies
 
 This project is created with:
 
@@ -17,7 +18,7 @@ This project is created with:
     Command Line
     Visual Studio Code
 
-Sources
+## Sources
 
 With the resources available and studies from:
 
@@ -29,15 +30,15 @@ With the resources available and studies from:
     Google research
     SlayingTheDragon
 
-Inspiration
+## Inspiration
 
     SlayingTheDragon Course Project : https://www.slayingthedragon.io/dashboard/css/introduction
 
-Status
+## Status
 
 Project is completed as required.
 
-Author/Contact
+## Author/Contact
 
     M. Achilleas - Initial work
     Website Preview: https://pricing-dusky.vercel.app/
